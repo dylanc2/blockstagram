@@ -2,26 +2,25 @@ import React from 'react';
 
 class Block extends React.Component {
    
-    //ADD CODE HERE
+  constructor(props) {
+    super(props);
+    this.state = {
+      color: props.color
+    }
+  }
     
   render() {
 
-  const mystyle = {
-      // ADD CODE HERE
+  const myStyle = {
+    backgroundColor: this.state.color
     };
 
   return (
     <>
-      <div class = "blockers" style={
-        // ADD CODE HERE
-        }>
-      </div>
-      
+      <div className="blockers" style={myStyle}></div>
       <div className="bottom">
           <div className="white"></div>
       </div>
-
-
     </>
       );
     }

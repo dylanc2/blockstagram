@@ -1,18 +1,23 @@
 import React from 'react';
-// ADD CODE HERE
+import Block from './Block';
 
 class Feed extends React.Component {
 
     state = {
-      // ADD CODE HERE
-      showopt: false
+      showopt: false,
+      blocks: [],
+      count: 0
     }
 
     addBlock = (color) => {
+        const newBlocks = this.state.blocks.slice();
+        newBlocks.unshift(<Block color={color} key={this.state.count}></Block>);
         this.setState({
-        // ADD CODE HERE
-      })
-    }
+          blocks: newBlocks,
+          count: this.state.count + 1
+        });
+        console.log(this.state.blocks);
+      }
 
     pickColorlayout = () => {
       if (this.state.showopt == false) {
@@ -28,16 +33,16 @@ class Feed extends React.Component {
     }
     
     render() {
-
       return (
         <div className = 'mainfeed'>
         <div className="input">
-        {/* ADD CODE HERE */}
+        {this.state.blocks}
         </div>
         <div>
-          <button class="button" onClick={this.pickColorlayout}>+ Post Block</button>
+          <button className="button" onClick={this.pickColorlayout}>+ Post Block</button>
         </div>
-        { this.state.showopt ?         <div className="pickblock">
+        {/* inline if-else: condition ? true : false */}
+        { this.state.showopt ? <div className="pickblock">  
         <div>
             <button className="red"  onClick={() => this.addBlock("rgb(134, 5, 5)")}></button>
             <button className="blue" onClick={() => this.addBlock("rgb(21, 0, 141)")}></button>
@@ -48,7 +53,6 @@ class Feed extends React.Component {
         </div>
      </div>: null }   
       </div>
-    
       );
     }
   }
