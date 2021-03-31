@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/blockstagram/static/css/main.b9f5cd9c.chunk.css",
+    "main.js": "/blockstagram/static/js/main.65b75a4f.chunk.js",
+    "main.js.map": "/blockstagram/static/js/main.65b75a4f.chunk.js.map",
+    "runtime-main.js": "/blockstagram/static/js/runtime-main.7a846946.js",
+    "runtime-main.js.map": "/blockstagram/static/js/runtime-main.7a846946.js.map",
+    "static/css/2.150d169a.chunk.css": "/blockstagram/static/css/2.150d169a.chunk.css",
+    "static/js/2.be6617b2.chunk.js": "/blockstagram/static/js/2.be6617b2.chunk.js",
+    "static/js/2.be6617b2.chunk.js.map": "/blockstagram/static/js/2.be6617b2.chunk.js.map",
+    "static/js/3.6af4b52d.chunk.js": "/blockstagram/static/js/3.6af4b52d.chunk.js",
+    "static/js/3.6af4b52d.chunk.js.map": "/blockstagram/static/js/3.6af4b52d.chunk.js.map",
+    "index.html": "/blockstagram/index.html",
+    "static/css/2.150d169a.chunk.css.map": "/blockstagram/static/css/2.150d169a.chunk.css.map",
+    "static/css/main.b9f5cd9c.chunk.css.map": "/blockstagram/static/css/main.b9f5cd9c.chunk.css.map",
+    "static/js/2.be6617b2.chunk.js.LICENSE.txt": "/blockstagram/static/js/2.be6617b2.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7a846946.js",
+    "static/css/2.150d169a.chunk.css",
+    "static/js/2.be6617b2.chunk.js",
+    "static/css/main.b9f5cd9c.chunk.css",
+    "static/js/main.65b75a4f.chunk.js"
+  ]
+}
